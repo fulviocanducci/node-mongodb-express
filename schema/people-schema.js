@@ -1,7 +1,5 @@
 const { mongoose, Schema, SchemaTypes } = require('../connection/index');
 
-const nameCollection = 'people';
-
 const peopleSchema = new Schema({
     id: { 
         type: SchemaTypes.ObjectId 
@@ -31,6 +29,5 @@ peopleSchema.set('toJSON', {
 
 module.exports = { 
     mongoose,    
-    peopleSchema, 
-    nameCollection
+    peopleSchema    
 }
